@@ -1,4 +1,4 @@
-class ggT{
+class greatestCommonDemoninator{
 	public static void main(String[]args) {
 		int a = 101;
 		int b = -16;
@@ -10,10 +10,10 @@ class ggT{
 			b = Integer.valueOf(args[1]);
 		}
 
-		System.out.println("ggt(" + a + ", " + b + ") = " + ggt(a, b));
+		System.out.println("gcd(" + a + ", " + b + ") = " + gcd(a, b));
 	}
 
-	public static int ggt(int a, int b) {
+	public static int gcd(int a, int b) {
 		if (a < 0) {a *= -1;}
 		if (b < 0) {b *= -1;}
 		
@@ -27,7 +27,7 @@ class ggT{
 			return a;
 		}
 		
-		return ggt(b, a % b);
+		return gcd(b, a % b);
 	}
 
 }
